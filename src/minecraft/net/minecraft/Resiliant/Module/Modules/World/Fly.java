@@ -5,6 +5,7 @@ import org.lwjgl.input.Keyboard;
 import net.minecraft.client.Minecraft;
 import net.minecraft.src.EntityPlayerSP;
 
+
 public class Fly {
 	
 	public static Minecraft mc = null;

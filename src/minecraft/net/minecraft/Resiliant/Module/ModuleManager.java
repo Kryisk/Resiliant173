@@ -20,6 +20,7 @@ import net.minecraft.Resiliant.Module.Modules.Player.waterplace;
 import net.minecraft.Resiliant.Module.Modules.Render.Fullbright;
 import net.minecraft.Resiliant.Module.Modules.Render.jvision;
 import net.minecraft.Resiliant.Module.Modules.World.fastplace;
+import net.minecraft.Resiliant.Module.Modules.World.Rise;
 
 public class ModuleManager {
 	
@@ -29,7 +30,6 @@ public class ModuleManager {
 		
 		
 		ModuleManager.activeModules.add(new Speedmine());
-		
 		ModuleManager.activeModules.add(new fastwalk());
 		ModuleManager.activeModules.add(new AntiVelocity());
 		ModuleManager.activeModules.add(new nameprotect());
@@ -37,25 +37,14 @@ public class ModuleManager {
 		ModuleManager.activeModules.add(new Run());
 		ModuleManager.activeModules.add(new Fullbright());
 		ModuleManager.activeModules.add(new waterplace());
+		ModuleManager.activeModules.add(new Rise());
 		ModuleManager.activeModules.add(new fastplace());
 		ModuleManager.activeModules.add(new KillAura());
-
-		
-
-		
-
-
-		
-		
 		ModuleManager.activeModules.add(new signedit());
-
-
 		ModuleManager.activeModules.add(new jvision());		
 		ModuleManager.activeModules.add(new Actualysppeedd());
-	
 		ModuleManager.activeModules.add(new Jesus());
 		ModuleManager.activeModules.add(new Nuker());
-		
 		ModuleManager.activeModules.add(new Flight());
 		ModuleManager.activeModules.add(new Sprint());
 		
