@@ -5,12 +5,9 @@
 package net.minecraft.src;
 
 import net.minecraft.Resiliant.Resiliant;
-import net.minecraft.Resiliant.Command.Command;
 import net.minecraft.Resiliant.Module.Module;
 import net.minecraft.Resiliant.Module.ModuleManager;
-import net.minecraft.Resiliant.Module.Modules.Player.Nuker;
 import net.minecraft.Resiliant.Module.Modules.Player.fastwalk;
-import net.minecraft.Resiliant.Module.Modules.Player.signedit;
 import net.minecraft.Resiliant.Module.Modules.Render.jvision;
 import net.minecraft.client.Minecraft;
 
@@ -230,18 +227,18 @@ public class EntityPlayerSP extends EntityPlayer
     {
     	int var = 0;
     	if(s.startsWith(".up")) {
-    		addChatMessage("§7[§4Resiliant§7]§f	Pos updated");
+    		addChatMessage("ï¿½7[ï¿½4Resiliantï¿½7]ï¿½f	Pos updated");
     		mc.thePlayer.posY = mc.thePlayer.posY +10;
     		return;
     	}
     	if(s.startsWith(".test")) {
-    		addChatMessage("§7[§4Resiliant§7]§f	Pos updated");
+    		addChatMessage("ï¿½7[ï¿½4Resiliantï¿½7]ï¿½f	Pos updated");
     		mc.thePlayer.motionY ++;
     		return;
     	}
     	
     	if(s.startsWith(".up " + var)) {
-    		addChatMessage("§7[§4Resiliant§7]§f	Pos updated");
+    		addChatMessage("ï¿½7[ï¿½4Resiliantï¿½7]ï¿½f	Pos updated");
     		mc.thePlayer.posY += var;
     		return;
     	}

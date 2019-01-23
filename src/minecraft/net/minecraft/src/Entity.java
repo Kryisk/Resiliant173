@@ -7,14 +7,8 @@ package net.minecraft.src;
 import java.util.List;
 import java.util.Random;
 
-import org.lwjgl.input.Keyboard;
-
 import net.minecraft.Resiliant.Resiliant;
-import net.minecraft.Resiliant.Module.Modules.Player.Actualysppeedd;
-import net.minecraft.Resiliant.Module.Modules.Player.Flight;
-import net.minecraft.Resiliant.Module.Modules.Player.Run;
-import net.minecraft.Resiliant.Module.Modules.Player.fastwalk;
-import net.minecraft.Resiliant.Module.Modules.Render.Fullbright;
+import net.minecraft.Resiliant.Module.Modules.World.Run;
 import net.minecraft.client.Minecraft;
 
 // Referenced classes of package net.minecraft.src:

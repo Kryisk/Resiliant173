@@ -7,8 +7,7 @@ package net.minecraft.src;
 import java.util.Random;
 
 import net.minecraft.Resiliant.Resiliant;
-import net.minecraft.Resiliant.Module.Modules.Player.Jesus;
-import net.minecraft.Resiliant.Module.Modules.Player.Run;
+import net.minecraft.Resiliant.Module.Modules.World.Jesus;
 import net.minecraft.Resiliant.Module.Modules.Player.waterplace;
 
 // Referenced classes of package net.minecraft.src:

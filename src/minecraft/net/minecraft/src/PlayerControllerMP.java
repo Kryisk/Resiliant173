@@ -5,7 +5,7 @@
 package net.minecraft.src;
 
 import net.minecraft.Resiliant.Resiliant;
-import net.minecraft.Resiliant.Module.Modules.Player.Speedmine;
+import net.minecraft.Resiliant.Module.Modules.World.Speedmine;
 import net.minecraft.Resiliant.Module.Modules.UtilhacksWorld.fastplace;
 import net.minecraft.client.Minecraft;
 

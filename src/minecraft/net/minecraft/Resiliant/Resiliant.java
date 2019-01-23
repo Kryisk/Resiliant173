@@ -26,9 +26,9 @@ import net.minecraft.client.Minecraft;
 public class Resiliant {
 	
 	 public static  String client_name = "Resilient";
-	 public static double client_version = 0.9;
+
 	 public static String command_talk = "[Resiliant] ";
-	 public static final Resiliant Resiliant = new Resiliant();
+	 public static final Resiliant Resiliant = new Resiliant();public static double client_version = 0.9;
 	 
 	 public static boolean stop = false;
 	 public static Minecraft mc = null;

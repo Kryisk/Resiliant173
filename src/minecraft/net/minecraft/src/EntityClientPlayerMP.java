@@ -8,13 +8,12 @@ import java.io.File;
 
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
-import javax.sound.sampled.LineUnavailableException;
 
 import org.lwjgl.input.Keyboard;
 
 import net.minecraft.Resiliant.Resiliant;
-import net.minecraft.Resiliant.Module.Modules.Player.Flight;
-import net.minecraft.Resiliant.Module.Modules.Player.Nuker;
+import net.minecraft.Resiliant.Module.Modules.World.Flight;
+import net.minecraft.Resiliant.Module.Modules.World.Nuker;
 import net.minecraft.Resiliant.Module.Modules.Player.reversenuke;
 import net.minecraft.client.Minecraft;
 
@@ -173,18 +172,18 @@ public class EntityClientPlayerMP extends EntityPlayerSP
     {	
     	//TODO:
     	if(s.startsWith(".help")) {
-    		addChatMessage("§7[§4Resiliant§7]§f	Commands are .who - asks server whos on, .c claims town blocks on towny servers, .drop drops a stack of items hovered, .mods list mods, .drop drops current hand, .log lists logs");
+    		addChatMessage("ï¿½7[ï¿½4Resiliantï¿½7]ï¿½f	Commands are .who - asks server whos on, .c claims town blocks on towny servers, .drop drops a stack of items hovered, .mods list mods, .drop drops current hand, .log lists logs");
     		return;
     	}
     	
     	if(s.startsWith(".who")) {
-    		addChatMessage("§7[§4Resiliant§7]§f	Searching");
+    		addChatMessage("ï¿½7[ï¿½4Resiliantï¿½7]ï¿½f	Searching");
     		sendQueue.addToSendQueue(new Packet3Chat("/who"));
     		return;
     	}
     	
     	if(s.startsWith(".music")) {
-    		addChatMessage("§7[§4Resiliant§7]§f	Playing all out life");
+    		addChatMessage("ï¿½7[ï¿½4Resiliantï¿½7]ï¿½f	Playing all out life");
     		try {
  			   File file = new File(filePath);
  			   Clip clip = AudioSystem.getClip();
@@ -203,19 +202,19 @@ public class EntityClientPlayerMP extends EntityPlayerSP
     		return;
     	}
     	  if(s.startsWith(".stop")) {
-    		addChatMessage("§7[§4Resiliant§7]§f Stopping");
+    		addChatMessage("ï¿½7[ï¿½4Resiliantï¿½7]ï¿½f Stopping");
     		return;
     	}
     	
     	
     	
     	if(s.startsWith(".c")) {
-    		addChatMessage("§7[§4Resiliant§7]§f	Claiming land");
+    		addChatMessage("ï¿½7[ï¿½4Resiliantï¿½7]ï¿½f	Claiming land");
     		sendQueue.addToSendQueue(new Packet3Chat("/town claim"));
     		return;
     	}
     	if(s.startsWith(".drop")) {
-    		addChatMessage("§7[§4Resiliant§7]§f	Dropping entire invintory");
+    		addChatMessage("ï¿½7[ï¿½4Resiliantï¿½7]ï¿½f	Dropping entire invintory");
     		int x = 1; 
     		  
             // Exit when x becomes greater than 4 
@@ -232,19 +231,19 @@ public class EntityClientPlayerMP extends EntityPlayerSP
     	}
     	int var = 10;
     	if(s.startsWith(".up")) {
-    		addChatMessage("§7[§4Resiliant§7]§f	Pos updated");
+    		addChatMessage("ï¿½7[ï¿½4Resiliantï¿½7]ï¿½f	Pos updated");
     		mc.thePlayer.lastTickPosY += 10;
     		return;
     	}
     	
     	if(s.startsWith(".mods")) {
-    		addChatMessage("§7[§4Resiliant§7]§f	Resiliant has " + Resiliant.modulemanager.getModules().size() + " Mods Loaded");
+    		addChatMessage("ï¿½7[ï¿½4Resiliantï¿½7]ï¿½f	Resiliant has " + Resiliant.modulemanager.getModules().size() + " Mods Loaded");
     	
     		return;
     	}
     	
     	if(s.startsWith(".log")) {
-    		addChatMessage("§7[§4Resiliant§7]§f	Resiliant has " + Resiliant.log.activelogs.size() + " logs Stored");
+    		addChatMessage("ï¿½7[ï¿½4Resiliantï¿½7]ï¿½f	Resiliant has " + Resiliant.log.activelogs.size() + " logs Stored");
     	
     		return;
     	}

@@ -1,24 +1,19 @@
 package net.minecraft.Resiliant.Gui;
 
 import net.minecraft.Resiliant.Resiliant;
-import net.minecraft.Resiliant.Module.Modules.Player.Actualysppeedd;
-import net.minecraft.Resiliant.Module.Modules.Player.Flight;
-import net.minecraft.Resiliant.Module.Modules.Player.Jesus;
-import net.minecraft.Resiliant.Module.Modules.Player.Nuker;
-import net.minecraft.Resiliant.Module.Modules.Player.Speedmine;
+import net.minecraft.Resiliant.Module.Modules.World.Actualysppeedd;
+import net.minecraft.Resiliant.Module.Modules.World.Flight;
+import net.minecraft.Resiliant.Module.Modules.World.Jesus;
+import net.minecraft.Resiliant.Module.Modules.World.Nuker;
+import net.minecraft.Resiliant.Module.Modules.World.Speedmine;
 import net.minecraft.Resiliant.Module.Modules.Player.fastwalk;
 import net.minecraft.Resiliant.Module.Modules.Player.nameprotect;
 import net.minecraft.Resiliant.Module.Modules.Player.waterplace;
 import net.minecraft.Resiliant.Module.Modules.Render.Fullbright;
 import net.minecraft.Resiliant.Module.Modules.Render.jvision;
-import net.minecraft.src.EnumOptions;
 import net.minecraft.src.GameSettings;
 import net.minecraft.src.GuiButton;
-import net.minecraft.src.GuiControls;
-import net.minecraft.src.GuiIngame;
 import net.minecraft.src.GuiScreen;
-import net.minecraft.src.GuiSmallButton;
-import net.minecraft.src.GuiVideoSettings;
 import net.minecraft.src.StringTranslate;
 
 public class GuiMod extends GuiScreen{

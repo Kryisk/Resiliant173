@@ -7,7 +7,7 @@ package net.minecraft.src;
 import java.util.List;
 
 import net.minecraft.Resiliant.Resiliant;
-import net.minecraft.Resiliant.Module.Modules.Player.Actualysppeedd;
+import net.minecraft.Resiliant.Module.Modules.World.Actualysppeedd;
 
 // Referenced classes of package net.minecraft.src:
 //            Entity, Vec3D, World, Material, 

@@ -13,9 +13,6 @@ import java.util.Random;
 import java.util.Set;
 import java.util.TreeSet;
 
-import net.minecraft.Resiliant.Resiliant;
-import net.minecraft.Resiliant.Module.Modules.Player.Speedmine;
-
 // Referenced classes of package net.minecraft.src:
 //            IBlockAccess, WorldProvider, WorldInfo, MapStorage, 
 //            ISaveHandler, ChunkProvider, EntityPlayer, ChunkProviderLoadOrGenerate, 

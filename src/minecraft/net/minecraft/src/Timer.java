@@ -4,9 +4,6 @@
 
 package net.minecraft.src;
 
-import net.minecraft.Resiliant.Resiliant;
-import net.minecraft.Resiliant.Module.Modules.Player.Speedmine;
-
 public class Timer
 {
 

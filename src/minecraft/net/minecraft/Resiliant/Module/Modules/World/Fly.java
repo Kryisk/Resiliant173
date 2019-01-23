@@ -1,4 +1,4 @@
-package net.minecraft.Resiliant.Module.Modules;
+package net.minecraft.Resiliant.Module.Modules.World;
 
 import org.lwjgl.input.Keyboard;
 

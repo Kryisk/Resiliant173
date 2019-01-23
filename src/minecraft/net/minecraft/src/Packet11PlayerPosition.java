@@ -9,7 +9,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 
 import net.minecraft.Resiliant.Resiliant;
-import net.minecraft.Resiliant.Module.Modules.Player.Actualysppeedd;
+import net.minecraft.Resiliant.Module.Modules.World.Actualysppeedd;
 
 // Referenced classes of package net.minecraft.src:
 //            Packet10Flying

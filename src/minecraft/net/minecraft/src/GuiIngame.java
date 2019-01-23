@@ -11,16 +11,12 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Random;
 
-import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 
 import net.minecraft.Resiliant.Rainbow;
 import net.minecraft.Resiliant.Resiliant;
-import net.minecraft.Resiliant.Gui.GuiMod;
 import net.minecraft.Resiliant.Module.Category;
 import net.minecraft.Resiliant.Module.Module;
-import net.minecraft.Resiliant.Module.Modules.Player.Actualysppeedd;
-import net.minecraft.Resiliant.Module.Modules.Render.GuiAllocation;
 import net.minecraft.client.Minecraft;
 
 // Referenced classes of package net.minecraft.src:

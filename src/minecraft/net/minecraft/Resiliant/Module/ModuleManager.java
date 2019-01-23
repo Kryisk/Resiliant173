@@ -4,13 +4,13 @@ package net.minecraft.Resiliant.Module;
 import java.util.ArrayList;
 
 import net.minecraft.Resiliant.Module.Modules.Combat.KillAura;
-import net.minecraft.Resiliant.Module.Modules.Player.Actualysppeedd;
+import net.minecraft.Resiliant.Module.Modules.World.Actualysppeedd;
 import net.minecraft.Resiliant.Module.Modules.Player.AntiVelocity;
-import net.minecraft.Resiliant.Module.Modules.Player.Flight;
-import net.minecraft.Resiliant.Module.Modules.Player.Jesus;
-import net.minecraft.Resiliant.Module.Modules.Player.Nuker;
-import net.minecraft.Resiliant.Module.Modules.Player.Run;
-import net.minecraft.Resiliant.Module.Modules.Player.Speedmine;
+import net.minecraft.Resiliant.Module.Modules.World.Flight;
+import net.minecraft.Resiliant.Module.Modules.World.Jesus;
+import net.minecraft.Resiliant.Module.Modules.World.Nuker;
+import net.minecraft.Resiliant.Module.Modules.World.Run;
+import net.minecraft.Resiliant.Module.Modules.World.Speedmine;
 import net.minecraft.Resiliant.Module.Modules.Player.Sprint;
 import net.minecraft.Resiliant.Module.Modules.Player.fastwalk;
 import net.minecraft.Resiliant.Module.Modules.Player.nameprotect;
@@ -18,9 +18,7 @@ import net.minecraft.Resiliant.Module.Modules.Player.reversenuke;
 import net.minecraft.Resiliant.Module.Modules.Player.signedit;
 import net.minecraft.Resiliant.Module.Modules.Player.waterplace;
 import net.minecraft.Resiliant.Module.Modules.Render.Fullbright;
-import net.minecraft.Resiliant.Module.Modules.Render.GuiAllocation;
 import net.minecraft.Resiliant.Module.Modules.Render.jvision;
-import net.minecraft.Resiliant.Module.Modules.Unlocking.Chat;
 import net.minecraft.Resiliant.Module.Modules.UtilhacksWorld.fastplace;
 
 public class ModuleManager {

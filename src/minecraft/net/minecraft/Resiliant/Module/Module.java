@@ -24,6 +24,18 @@ public class Module {
 	}
 
 	public int getColor() {
+//		if(this.category == Category.PLAYER){
+//			this.color = 0xffFFC312;
+//		}
+//		if(this.category == Category.COMBAT){
+//			this.color = 0xffff0000;
+//		}
+//		if(this.category == Category.RENDER){
+//			this.color = 0xff00aa00;
+//		}
+//		if(this.category == Category.WORLD){
+//			this.color = 0xffff0000;
+//		}
 		return color;
 	}
 

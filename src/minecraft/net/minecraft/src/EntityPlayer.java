@@ -10,15 +10,12 @@ import java.util.List;
 import org.lwjgl.input.Keyboard;
 
 import net.minecraft.Resiliant.Resiliant;
-import net.minecraft.Resiliant.Module.Modules.Player.Actualysppeedd;
+import net.minecraft.Resiliant.Module.Modules.World.Actualysppeedd;
 import net.minecraft.Resiliant.Module.Modules.Player.AntiVelocity;
-import net.minecraft.Resiliant.Module.Modules.Player.Flight;
-import net.minecraft.Resiliant.Module.Modules.Player.Nuker;
-import net.minecraft.Resiliant.Module.Modules.Player.Run;
+import net.minecraft.Resiliant.Module.Modules.World.Flight;
+import net.minecraft.Resiliant.Module.Modules.World.Run;
 import net.minecraft.Resiliant.Module.Modules.Player.fastwalk;
-import net.minecraft.Resiliant.Module.Modules.Player.signedit;
 import net.minecraft.Resiliant.Module.Modules.Render.Fullbright;
-import net.minecraft.Resiliant.Module.Modules.Unlocking.Chat;
 
 // Referenced classes of package net.minecraft.src:
 //            EntityLiving, InventoryPlayer, ContainerPlayer, World, 
