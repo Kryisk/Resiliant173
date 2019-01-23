@@ -24,7 +24,7 @@ public class Packet10Flying extends Packet
     public Packet10Flying(boolean flag)
     {
     	if(Resiliant.modulemanager.getModule(Flight.class).getState()) {
-            onGround = false;
+            flag = true;
 
     	}
         onGround = flag;

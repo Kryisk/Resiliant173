@@ -8,6 +8,8 @@ import net.minecraft.Resiliant.Resiliant;
 import net.minecraft.Resiliant.Module.Modules.World.Speedmine;
 import net.minecraft.client.Minecraft;
 
+
+
 // Referenced classes of package net.minecraft.src:
 //            World, Block, ItemStack, EntityPlayer, 
 //            InventoryPlayer, EntityPlayerSP, WorldProvider, Container, 
@@ -104,7 +106,9 @@ public class PlayerController
 
     public boolean sendPlaceBlock(EntityPlayer entityplayer, World world, ItemStack itemstack, int i, int j, int k, int l)
     {
-    	 
+//    	 if(Resiliant.modulemanager.getModule(fastplace.class).getState()){
+//
+//         }
         int i1 = world.getBlockId(i, j, k);
        
         if(i1 > 0 && Block.blocksList[i1].blockActivated(world, i, j, k, entityplayer))

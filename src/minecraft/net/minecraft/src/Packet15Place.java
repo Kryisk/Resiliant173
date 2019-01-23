@@ -8,9 +8,6 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 
-import net.minecraft.Resiliant.Resiliant;
-import net.minecraft.Resiliant.Module.Modules.UtilhacksWorld.fastplace;
-
 // Referenced classes of package net.minecraft.src:
 //            Packet, ItemStack, NetHandler
 

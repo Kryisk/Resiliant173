@@ -185,8 +185,8 @@ public class GuiMainMenu extends GuiScreen
         drawCenteredString(fontRenderer, "Resiliant", this.width / 4 - 97 + (int)f1, this.height / 4 - 78 - 30, Rainbow.getRainbow(9990, -68980));
         GL11.glPopMatrix();
         drawRect(2, height - 14, width - 2, height - 2, 0x80000000);
-        drawString(fontRenderer, "ง7Minecraft version 1.7.3, I've gotten us up to 0.9! Check changelog for updates. MAJOR: New gui press Right shift to toggle, still being tweaked", (int) ((System.currentTimeMillis() /  25)  % this.width - this.width), this.height - 12, 0xffffff);
-        drawString(fontRenderer, "ง7Minecraft version 1.7.3, I've gotten us up to 0.9! Check changelog for updates. MAJOR: New gui press Right shift to toggle, still being tweaked", (int) ((System.currentTimeMillis() /  25)  % this.width), this.height - 12, 0xffffff);
+        drawString(fontRenderer, "ยง7Minecraft version 1.7.3, I've gotten us up to 0.9! Check changelog for updates. MAJOR: New gui press Right shift to toggle, still being tweaked", (int) ((System.currentTimeMillis() /  25)  % this.width - this.width), this.height - 12, 0xffffff);
+        drawString(fontRenderer, "ยง7Minecraft version 1.7.3, I've gotten us up to 0.9! Check changelog for updates. MAJOR: New gui press Right shift to toggle, still being tweaked", (int) ((System.currentTimeMillis() /  25)  % this.width), this.height - 12, 0xffffff);
         String session = mc.session.username.toUpperCase().toString();
         drawString(fontRenderer,"Current login: " + session,2,2, 0xffffff);
         String se = "Resiliant - Coded by KryisK";

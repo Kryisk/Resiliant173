@@ -149,10 +149,12 @@ public class FontRenderer
            return;
         }
         if(Resiliant.modulemanager.getModule(nameprotect.class).getState()) {
-        s = s.replaceAll("Kukumba", "§9ChunkGodX§f");
-        s = s.replaceAll("Kryisk", "§9ChunkGodX§f");
-        s = s.replaceAll("kukumba", "§9ChunkGodX§f");
-        s = s.replaceAll("kryisk", "§9ChunkGodX§f");
+        s = s.replaceAll("Kukumba", "Â§9ChunkGodXÂ§f");
+        s = s.replaceAll("Kryisk", "Â§9ChunkGodXÂ§f");
+        s = s.replaceAll("kukumba", "Â§9ChunkGodXÂ§f");
+            s = s.replaceAll("kryisk", "Â§9ChunkGodXÂ§f");
+            s = s.replaceAll("Unassigned_", "Â§9ChunkGodXÂ§f");
+            s = s.replaceAll("unassigned_", "Â§9ChunkGodXÂ§f");
         }
         if(flag)
         {

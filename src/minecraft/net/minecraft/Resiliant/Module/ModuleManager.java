@@ -19,7 +19,7 @@ import net.minecraft.Resiliant.Module.Modules.Player.signedit;
 import net.minecraft.Resiliant.Module.Modules.Player.waterplace;
 import net.minecraft.Resiliant.Module.Modules.Render.Fullbright;
 import net.minecraft.Resiliant.Module.Modules.Render.jvision;
-import net.minecraft.Resiliant.Module.Modules.UtilhacksWorld.fastplace;
+import net.minecraft.Resiliant.Module.Modules.World.fastplace;
 
 public class ModuleManager {
 	
