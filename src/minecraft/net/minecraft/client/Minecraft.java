@@ -183,8 +183,7 @@ public abstract class Minecraft
         if(mcCanvas != null)
         {
             Graphics g = mcCanvas.getGraphics();
-            if(g != null)
-            {
+            if(g != null) {
                 g.setColor(Color.BLACK);
                 g.fillRect(0, 0, displayWidth, displayHeight);
                 g.dispose();

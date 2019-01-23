@@ -141,7 +141,7 @@ public class ThreadDownloadResources extends Thread
         }
         catch(Exception exception)
         {
-            exception.printStackTrace();
+         //   exception.printStackTrace();
         }
     }
 
