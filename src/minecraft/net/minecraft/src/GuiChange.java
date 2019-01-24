@@ -77,6 +77,7 @@ public class GuiChange extends GuiScreen
         drawString(fontRenderer, "§7Minecraft version 1.7.3, I've gotten us up to 0.9! Check changelog for updates. MAJOR: New gui press Right shift to toggle, still being tweaked", (int) ((System.currentTimeMillis() /  25)  % this.width), this.height - 12, 0xffffff);
 
     }
+//tta
 
     private GuiScreen parentScreen;
     protected String screenTitle;
