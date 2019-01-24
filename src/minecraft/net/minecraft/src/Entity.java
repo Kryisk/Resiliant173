@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Random;
 
 import net.minecraft.Resiliant.Resiliant;
+import net.minecraft.Resiliant.Module.Modules.Player.FastMove;
 import net.minecraft.Resiliant.Module.Modules.World.Run;
 import net.minecraft.client.Minecraft;
 
@@ -177,6 +178,9 @@ public abstract class Entity
         prevRotationYaw = rotationYaw;
         if(handleWaterMovement())
         {
+            //TODO:
+
+
             if(!inWater && !isFirstUpdate)
             {
                 float f = MathHelper.sqrt_double(motionX * motionX * 0.20000000298023224D + motionY * motionY + motionZ * motionZ * 0.20000000298023224D) * 0.2F;

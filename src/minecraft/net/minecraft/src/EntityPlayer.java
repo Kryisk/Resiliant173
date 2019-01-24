@@ -7,6 +7,7 @@ package net.minecraft.src;
 import java.util.Iterator;
 import java.util.List;
 
+import net.minecraft.Resiliant.Module.Modules.Player.FastMove;
 import org.lwjgl.input.Keyboard;
 
 import net.minecraft.Resiliant.Resiliant;
@@ -16,7 +17,7 @@ import net.minecraft.Resiliant.Module.Modules.World.Flight;
 import net.minecraft.Resiliant.Module.Modules.World.Run;
 import net.minecraft.Resiliant.Module.Modules.Player.fastwalk;
 import net.minecraft.Resiliant.Module.Modules.Render.Fullbright;
-
+import net.minecraft.Resiliant.Module.Modules.World.Rise;
 // Referenced classes of package net.minecraft.src:
 //            EntityLiving, InventoryPlayer, ContainerPlayer, World, 
 //            ChunkCoordinates, DataWatcher, Container, StatList, 
@@ -65,6 +66,7 @@ public abstract class EntityPlayer extends EntityLiving
     public void onUpdate()
     {
     	//this.onNuke();
+        this.setNoClipping();
     	this.setFlying();
     	this.setFall(0F);
     	this.setRun();
@@ -1021,14 +1023,78 @@ public abstract class EntityPlayer extends EntityLiving
     	
     	
     }
-    
+    public void setNoClipping() {
+        if(Resiliant.modulemanager.getModule(Rise.class).getState()) {
+            this.onGround = false;
+            this.motionX = 0.0D;
+            this.motionY = 0.0D;
+            this.motionZ = 0.0D;
+
+            double d2 = this.rotationYaw + 90.0F;
+
+            boolean flag = (Keyboard.isKeyDown(17));
+            boolean flag1 = (Keyboard.isKeyDown(31)) ;
+            boolean flag2 = (Keyboard.isKeyDown(30)) ;
+            boolean flag3 = (Keyboard.isKeyDown(32)) ;
+            if (flag)
+            {
+                if (flag2) {
+                    d2 -= 45.0D;
+                } else if (flag3) {
+                    d2 += 45.0D;
+                }
+            }
+            else if (flag1)
+            {
+                d2 += 180.0D;
+                if (flag2) {
+                    d2 += 45.0D;
+                } else if (flag3) {
+                    d2 -= 45.0D;
+                }
+            }
+            else if (flag2)
+            {
+                d2 -= 90.0D;
+            }
+            else if (flag3)
+            {
+                d2 += 90.0D;
+            }
+            if ((flag) || (flag2) || (flag1) || (flag3))
+            {
+                this.motionX = Math.cos(Math.toRadians(d2));
+                this.motionZ = Math.sin(Math.toRadians(d2));
+            }
+            if ((Keyboard.isKeyDown(57))) {
+                this.motionY += 3.0D;
+            } else if ((Keyboard.isKeyDown(42))) {
+                this.motionY -= 3.0D;
+            } else if ((Keyboard.isKeyDown(82))) {
+                this.motionY -= 4.0D;
+            } else if ((Keyboard.isKeyDown(77))) {
+                this.motionY += 4.0D;
+            }
+            this.motionX *= 0.2;
+            this.motionY *= 0.2;
+            this.motionZ *= 0.2;
+        }
+
+
+    }
   
 
     
     public void setRun() {
-    	if(Resiliant.modulemanager.getModule(Run.class).getState()) {
-    		
-    	}
+    	if(Resiliant.modulemanager.getModule(FastMove.class).getState()) {
+            if ((mc.thePlayer.moveForward != 0 || mc.thePlayer.moveStrafing != 0)
+                    && !mc.thePlayer.isSneaking() && mc.thePlayer.onGround) {
+              //  mc.thePlayer.jump();
+                mc.thePlayer.motionX *= 1.4;
+              //  mc.thePlayer.motionY *= 0.4;
+                mc.thePlayer.motionZ *= 1.4;
+            }
+        }
     }
     
     public void setFall(float fd) { 

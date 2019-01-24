@@ -11,6 +11,7 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Random;
 
+import net.minecraft.Resiliant.Module.Modules.Player.FastMove;
 import org.lwjgl.opengl.GL11;
 
 import net.minecraft.Resiliant.Rainbow;
@@ -217,9 +218,14 @@ public class GuiIngame extends Gui
         PacketCounter packetcounter = (PacketCounter)packetStats.get(Integer.valueOf(i));
         Packet packet = null;
         //TODO: ss
-        
-        
-        
+        if(Resiliant.modulemanager.getModule(FastMove.class).getState()) {
+            SimpleDateFormat sdf = new SimpleDateFormat("ss");
+            Calendar cal = Calendar.getInstance();
+            String time = sdf.format(cal.getTime());
+            drawString(fontrenderer, time, 100, 0, 0xffecf0f1);
+
+        }
+
         if(!mc.gameSettings.showDebugInfo) {
       
             SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");

@@ -236,7 +236,7 @@ public class RenderLiving extends Render
         tessellator.draw();
         GL11.glEnable(3553 /*GL_TEXTURE_2D*/);
         if(entityliving.isSneaking()) {
-       	 fontrenderer.drawString(s, -fontrenderer.getStringWidth(s) / 2, 0, 0xfff0faf0);
+       	 fontrenderer.drawString(s, -fontrenderer.getStringWidth(s) / 2, 0, 0xff0000ff);
         }
         if(f >= 54F) {
         	 fontrenderer.drawString(s, -fontrenderer.getStringWidth(s) / 2, 0, 0xff00aa00);

@@ -71,6 +71,7 @@ public class GuiChange extends GuiScreen
         drawString(fontRenderer, "-Added Toggleable name protect", 45, 395, 0xffffff);
         drawString(fontRenderer, "-Added .music", 45, 406, 0xffffff);
         drawString(fontRenderer, "-Added Kill Aura", 45, 417, 0xffffff);
+        drawString(fontRenderer, "-Added Speed/Sprint", 45, 428, 0xffffff);
         drawRect(2, height - 14, width - 2, height - 2, 0x80000000);
         drawString(fontRenderer, "§7Minecraft version 1.7.3, I've gotten us up to 0.9! Check changelog for updates. MAJOR: New gui press Right shift to toggle, still being tweaked", (int) ((System.currentTimeMillis() /  25)  % this.width - this.width), this.height - 12, 0xffffff);
         drawString(fontRenderer, "§7Minecraft version 1.7.3, I've gotten us up to 0.9! Check changelog for updates. MAJOR: New gui press Right shift to toggle, still being tweaked", (int) ((System.currentTimeMillis() /  25)  % this.width), this.height - 12, 0xffffff);

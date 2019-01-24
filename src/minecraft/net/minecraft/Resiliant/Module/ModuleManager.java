@@ -21,6 +21,8 @@ import net.minecraft.Resiliant.Module.Modules.Render.Fullbright;
 import net.minecraft.Resiliant.Module.Modules.Render.jvision;
 import net.minecraft.Resiliant.Module.Modules.World.fastplace;
 import net.minecraft.Resiliant.Module.Modules.World.Rise;
+import net.minecraft.Resiliant.Module.Modules.Player.FastMove;
+
 
 public class ModuleManager {
 	
@@ -43,6 +45,8 @@ public class ModuleManager {
 		ModuleManager.activeModules.add(new signedit());
 		ModuleManager.activeModules.add(new jvision());		
 		ModuleManager.activeModules.add(new Actualysppeedd());
+		ModuleManager.activeModules.add(new FastMove());
+
 		ModuleManager.activeModules.add(new Jesus());
 		ModuleManager.activeModules.add(new Nuker());
 		ModuleManager.activeModules.add(new Flight());
